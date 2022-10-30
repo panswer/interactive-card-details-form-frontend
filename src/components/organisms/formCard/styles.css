@@ -1,0 +1,147 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  justify-self: center;
+}
+
+.form > .input-group {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+.form .input-group {
+  position: relative;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+.form > .input-group:first-child {
+  margin-top: 0.25rem;
+}
+.form > .input-group:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.form .input-group label {
+  width: 90%;
+}
+
+.form > .input-group label {
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+.form > .input-group input {
+  margin-top: 6px;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--color-neutral-light-grayish-violet);
+  border-radius: 10px;
+  width: 81%;
+}
+.form > .input-group input::placeholder {
+  color: var(--color-neutral-light-grayish-violet);
+  font-weight: bold;
+}
+
+.input-row {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.input-row.w-90 {
+  width: 90%;
+}
+
+.input-row .input-group label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.input-row .input-group .input-row .input-group input {
+  width: 3rem;
+  padding: 0.7rem 0.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--color-neutral-light-grayish-violet);
+  border-radius: 10px;
+  margin-top: 6px;
+}
+
+.input-row > .input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-row > .input-group > input {
+  width: 90%;
+  padding: 0.7rem 0.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--color-neutral-light-grayish-violet);
+  border-radius: 10px;
+  margin-top: 6px;
+}
+
+.input-row .input-group .input-row .input-group input::placeholder,
+.input-row > .input-group > input::placeholder {
+  color: var(--color-neutral-light-grayish-violet);
+  font-weight: bold;
+}
+
+.grid-center {
+  margin: 0 auto;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+form .btn-confirm {
+  width: 90%;
+  margin: 1rem auto;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: var(--color-neutral-light-grayish-violet);
+  background-color: var(--color-neutral-very-dark-violet);
+  border: none;
+  padding: 1rem;
+  font-weight: bold;
+  font-family: "Space Grotesk";
+  border-radius: 10px;
+}
+
+.form .input-group input.error,
+.input-row .input-group .input-row .input-group input.error {
+  border-color: var(--color-primary-red);
+}
+
+form .msg-error {
+  position: absolute;
+  color: var(--color-primary-red);
+  align-self: flex-start;
+  left: 1rem;
+  bottom: -1rem;
+}
+
+form .msg-error.l-0 {
+  left: 0;
+}
+
+#formatNumber {
+  z-index: 100;
+}
+#formatNumber:disabled {
+  background-color: transparent;
+}
+
+#card-number {
+  color: transparent;
+  position: absolute;
+  background-color: transparent;
+  bottom: 0;
+  z-index: 200;
+}

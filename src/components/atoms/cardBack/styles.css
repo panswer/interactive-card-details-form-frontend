@@ -1,0 +1,20 @@
+.card-back {
+  height: 135px;
+  width: 251px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card-back > .cvc {
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 100;
+  margin-right: 18px;
+  margin-bottom: 2.5px;
+}

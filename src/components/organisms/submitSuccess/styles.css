@@ -1,0 +1,26 @@
+.submit-success {
+  width: 100%;
+  grid-area: message;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit-success>.imgContainer{
+  margin-bottom: 1.5rem;
+}
+
+.submit-success > .message-title {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.submit-success > .message-description {
+  color: var(--color-neutral-dark-grayish-violet);
+  margin-bottom: 2.6rem;
+}

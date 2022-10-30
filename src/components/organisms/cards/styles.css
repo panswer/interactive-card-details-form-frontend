@@ -1,0 +1,55 @@
+.cards {
+  position: absolute;
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card-front-float {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  box-shadow: 0px 20px 40px 10px rgba(50, 50, 50, 0.2);
+  background-color: transparent;
+  border-radius: 5px;
+  z-index: 100;
+}
+
+.card-back-float {
+  position: absolute;
+  top: 7%;
+  left: 20%;
+  z-index: 100;
+}
+
+.card-front-float,
+.card-back-float {
+  box-shadow: 0px 20px 40px 10px rgba(50, 50, 50, 0.2);
+  background-color: transparent;
+  border-radius: 15px;
+  height: 154px;
+}
+
+.top {
+  z-index: 200;
+}
+
+@media only screen and (min-width: 767px) {
+  .card-front-float {
+    top: 25%;
+    left: 15%;
+  }
+  .card-back-float {
+    top: 55%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .card-front-float {
+    top: 25%;
+    left: 25%;
+  }
+  .card-back-float {
+    left: 28%;
+  }
+}

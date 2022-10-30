@@ -1,0 +1,52 @@
+.card-front {
+  height: 135px;
+  width: 251px;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: grid;
+  grid-template-areas:
+    "card-front-header card-front-header"
+    "card-front-number card-front-number"
+    "card-front-holder-name card-front-exp";
+  grid-template-rows: 3fr 2fr 1fr;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.card-front > .card-header {
+  grid-area: card-front-header;
+  width: 50px;
+  padding-top: 3%;
+}
+
+.card-header > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card-front > .card-body {
+  grid-area: card-front-number;
+  align-self: center;
+  /* justify-self: center; */
+  letter-spacing: 2.5px;
+}
+
+.card-front > .folder-name {
+  grid-area: card-front-holder-name;
+  text-transform: uppercase;
+}
+
+.card-front > .card-expire {
+  grid-area: card-front-exp;
+  justify-self: end;
+}
+
+.card-front > .folder-name,
+.card-front > .card-expire {
+  font-size: 0.7rem;
+  font-weight: 100;
+}
